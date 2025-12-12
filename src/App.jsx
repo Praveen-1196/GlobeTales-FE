@@ -14,7 +14,8 @@ import AdminRoute from "./components/AdminRoute";
 import ChangePassword from "./pages/ChangePassword";
 import AuthorProfile from "./pages/AuthorProfile";
 import Bookmarks from "./pages/Bookmarks";
-
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
 export default function App() {
   return (
     <>
@@ -85,6 +86,9 @@ export default function App() {
     </ProtectedRoute>
   }
 />
+<Route path="/forgot-password" element={<ForgotPassword />} />
+<Route path="/reset-password/:uid/:token" element={<ResetPassword />} />
+
              </Routes>
     </>
   );

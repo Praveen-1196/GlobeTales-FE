@@ -2,6 +2,7 @@ import { useState } from "react";
 import API from "../api/axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -53,6 +54,12 @@ export default function Login() {
               required
             />
           </div>
+          <div className="text-end">
+  <Link to="/forgot-password" className="small">
+    Forgot Password?
+  </Link>
+</div>
+
 
           <button className="btn btn-primary w-100">Login</button>
         </form>
