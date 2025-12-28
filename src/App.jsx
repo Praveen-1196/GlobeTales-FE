@@ -16,9 +16,11 @@ import AuthorProfile from "./pages/AuthorProfile";
 import Bookmarks from "./pages/Bookmarks";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
+import { Toaster } from "react-hot-toast";
 export default function App() {
   return (
     <>
+    <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
 
       <Routes>
