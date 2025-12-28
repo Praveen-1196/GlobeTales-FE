@@ -20,7 +20,7 @@ import { Toaster } from "react-hot-toast";
 export default function App() {
   return (
     <>
-    <Toaster position="top-center" reverseOrder={false} />
+    <Toaster position="top-right" reverseOrder={false} />
       <Navbar />
 
       <Routes>
