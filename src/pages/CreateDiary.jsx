@@ -31,9 +31,7 @@ export default function CreateDiary() {
     }
 
     try {
-      await API.post("diary/create/", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      await API.post("diary/create/", formData);
 
       toast.success("Diary created successfully!");
       navigate("/");
