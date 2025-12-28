@@ -50,9 +50,7 @@ export default function EditDiary() {
     if (photo) updatedData.append("photos", photo);
 
     try {
-      await API.put(`diary/${id}/update/`, updatedData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      await API.put(`diary/${id}/update/`, updatedData);
 
       toast.success("Diary updated successfully!");
       navigate(`/diary/${id}`);
